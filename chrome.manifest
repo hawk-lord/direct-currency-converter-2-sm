@@ -1,0 +1,4 @@
+# Direct Currency Converter
+
+content   direct-currency-converter                chrome/content/  contentaccessible=true
+
