@@ -41,10 +41,10 @@ const SettingsAdapter = function() {
     console.error("SettingsAdapter created");
     return {
         save: function (contentScriptParams) {
-            self.port.emit("saveSettings", contentScriptParams);
+            window.postMessage(contentScriptParams, "*");
         },
         reset: function () {
-            self.port.emit("resetSettings");
+            self.postMessage(contentScriptParams, "*");
         }
     }
 }();
