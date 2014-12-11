@@ -11,7 +11,7 @@ const ContentAdapter = function() {
                 if (DirectCurrencyContent)
                     resolve(DirectCurrencyContent);
                 else
-                    reject("NOK");
+                    reject(Error("NOK"));
             }
         );
         promise.then(
@@ -22,8 +22,7 @@ const ContentAdapter = function() {
             function (err) {
                 console.error("then "  + err);
             }
-        );
-        promise.catch(
+        ).catch(
             function (err) {
                 console.error("catch " + err);
             }
@@ -35,7 +34,7 @@ const ContentAdapter = function() {
                 if (DirectCurrencyContent)
                     resolve(DirectCurrencyContent);
                 else
-                    reject("NOK");
+                    reject(Error("NOK"));
             }
         );
         promise.then(
@@ -46,8 +45,7 @@ const ContentAdapter = function() {
             function (err) {
                 console.error("then "  + err);
             }
-        );
-        promise.catch(
+        ).catch(
             function (err) {
                 console.error("catch " + err);
             }

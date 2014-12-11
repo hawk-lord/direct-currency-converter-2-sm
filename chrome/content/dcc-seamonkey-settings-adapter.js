@@ -21,8 +21,7 @@ const SettingsAdapter = function() {
             function (err) {
                 console.error("then "  + err);
             }
-        );
-        promise.catch(
+        ).catch(
             function (err) {
                 console.error("catch " + err);
             }
