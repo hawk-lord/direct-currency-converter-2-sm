@@ -15,9 +15,9 @@ const ContentAdapter = function() {
             }
         );
         promise.then(
-            function(dcs) {
-                console.error("Promise fulfilled dcs " + dcs + " aData " +  aData);
-                dcs.onSendEnabledStatus(aData)
+            function(aDirectCurrencyContent) {
+                console.error("Promise fulfilled aDirectCurrencyContent " + aDirectCurrencyContent + " aData " +  aData);
+                aDirectCurrencyContent.onSendEnabledStatus(aData)
             },
             function (err) {
                 console.error("then "  + err);

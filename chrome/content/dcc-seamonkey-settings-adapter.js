@@ -14,9 +14,9 @@ const SettingsAdapter = function() {
             }
         );
         promise.then(
-            function(dcs) {
-                console.error("Promise fulfilled dcs " + dcs + " aData " +  aData);
-                dcs.showSettings(aData)
+            function(aDirectCurrencySettings) {
+                console.error("Promise fulfilled aDirectCurrencySettings " + aDirectCurrencySettings + " aData " +  aData);
+                aDirectCurrencySettings.showSettings(aData)
             },
             function (err) {
                 console.error("then "  + err);
