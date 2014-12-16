@@ -40,10 +40,21 @@ const SettingsAdapter = function() {
     console.error("SettingsAdapter created");
     return {
         save: function (contentScriptParams) {
-            window.postMessage(contentScriptParams, "*");
+            var element = document.createElement("DccSaveSettingsDataElement");
+            element.setAttribute("command", "save-dcc");
+            element.setAttribute("settings", JSON.stringify(contentScriptParams));
+            document.documentElement.appendChild(element);
+            var evt = document.createEvent("Events");
+            evt.initEvent("DccSaveSettingsEvent", true, false);
+            element.dispatchEvent(evt);
         },
         reset: function () {
-            self.postMessage(contentScriptParams, "*");
+            var element = document.createElement("DccResetSettingsDataElement");
+            element.setAttribute("command", "reset-dcc");
+            document.documentElement.appendChild(element);
+            var evt = document.createEvent("Events");
+            evt.initEvent("DccResetSettingsEvent", true, false);
+            element.dispatchEvent(evt);
         }
     }
 }();
