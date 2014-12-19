@@ -15,7 +15,7 @@ const SettingsAdapter = function() {
         );
         promise.then(
             function(aDirectCurrencySettings) {
-                console.error("Promise fulfilled aDirectCurrencySettings " + aDirectCurrencySettings + " aData " +  aData);
+                // console.error("Promise fulfilled aDirectCurrencySettings " + aDirectCurrencySettings + " aData " +  aData);
                 aDirectCurrencySettings.showSettings(aData)
             },
             function (err) {
@@ -28,8 +28,8 @@ const SettingsAdapter = function() {
         );
     };
     const receiveMessage = function(event) {
-        console.error("SettingsAdapter receiveMessage " + event.data
-            + " conversionQuotes " + event.data.conversionQuotes);
+        // console.error("SettingsAdapter receiveMessage " + event.data
+        //    + " conversionQuotes " + event.data.conversionQuotes);
         // DirectCurrencySettings.showSettings(event.data)
         if (event.data.conversionQuotes !== undefined)
             showSettings(event.data);
@@ -37,7 +37,7 @@ const SettingsAdapter = function() {
     window.addEventListener("message", receiveMessage, false);
     // Send message when created
     // otherWindow.postMessage("SettingsAdapter created", "*");
-    console.error("SettingsAdapter created");
+    // console.error("SettingsAdapter created");
     return {
         save: function (contentScriptParams) {
             var element = document.createElement("DccSaveSettingsDataElement");

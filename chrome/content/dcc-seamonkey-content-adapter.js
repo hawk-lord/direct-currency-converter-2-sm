@@ -22,7 +22,7 @@ const ContentAdapter = function() {
         );
         promise.then(
             function(aDirectCurrencyContent) {
-                console.error("Promise fulfilled aDirectCurrencyContent " + aDirectCurrencyContent + " aData " +  aData);
+                // console.error("Promise fulfilled aDirectCurrencyContent " + aDirectCurrencyContent + " aData " +  aData);
                 aDirectCurrencyContent.onSendEnabledStatus(aData)
             },
             function (err) {
@@ -45,7 +45,7 @@ const ContentAdapter = function() {
         );
         promise.then(
             function(aDirectCurrencyContent) {
-                console.error("Promise fulfilled aDirectCurrencyContent " + aDirectCurrencyContent + " aData " +  aData);
+                // console.error("Promise fulfilled aDirectCurrencyContent " + aDirectCurrencyContent + " aData " +  aData);
                 aDirectCurrencyContent.onUpdateSettings(aData)
             },
             function (err) {
@@ -58,8 +58,8 @@ const ContentAdapter = function() {
         );
     };
     const receiveMessage = function(event) {
-        console.error("ContentAdapter receiveMessage " + event.data
-            + " conversionQuotes " + event.data.conversionQuotes);
+        // console.error("ContentAdapter receiveMessage " + event.data
+        //    + " conversionQuotes " + event.data.conversionQuotes);
         // DirectCurrencySettings.showSettings(event.data)
         if (event.data.conversionQuotes !== undefined) {
             onSendEnabledStatus(event.data);
@@ -69,7 +69,7 @@ const ContentAdapter = function() {
     window.addEventListener("message", receiveMessage, false);
     // Send message when created
     // otherWindow.postMessage("SettingsAdapter created", "*");
-    console.error("ContentAdapter created");
+    // console.error("ContentAdapter created");
     return {
         finish: function (hasConvertedElements) {
             // FIXME
