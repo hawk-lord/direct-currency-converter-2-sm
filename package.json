@@ -11,7 +11,7 @@
     ], 
     "lib": "lib", 
     "author": "Per Johansson", 
-    "version": "2.0.0.1",
+    "version": "2.0.0.2",
     "_xxx": "My remark: underscore xxx means disabled", 
     "main": "dcc-main", 
     "homepage": "http://www.joint.ax/",
@@ -20,7 +20,7 @@
     "description": "Converts monetary amounts from any currency (USD, GBP, etc.) to monetary amounts in a selectable currency automatically while browsing.", 
     "icon64": "data/images/1402781517_currency_exchange_1.png", 
     "dependencies": "", 
-    "fullName": "Direct Currency Converter 2 for SeaMonkey",
+    "fullName": "Direct Currency Converter for SeaMonkey",
     "permissions": {
         "private-browsing": true, 
         "cross-domain-content": [
