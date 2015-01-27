@@ -12,15 +12,15 @@ const ContentAdapter = function() {
     //self.port.on("sendEnabledStatus", DirectCurrencyContent.onSendEnabledStatus);
     //self.port.on("updateSettings", DirectCurrencyContent.onUpdateSettings);
     const onSendEnabledStatus = function(aData) {
-        var promise = new Promise(
+        const sendEnabledStatusPromise = new Promise(
             function(resolve, reject) {
                 if (DirectCurrencyContent)
                     resolve(DirectCurrencyContent);
                 else
-                    reject(Error("NOK"));
+                    reject(Error("sendEnabledStatusPromise NOK"));
             }
         );
-        promise.then(
+        sendEnabledStatusPromise.then(
             function(aDirectCurrencyContent) {
                 // console.error("Promise fulfilled aDirectCurrencyContent " + aDirectCurrencyContent + " aData " +  aData);
                 aDirectCurrencyContent.onSendEnabledStatus(aData)
@@ -35,15 +35,15 @@ const ContentAdapter = function() {
         );
     };
     const onUpdateSettings = function(aData) {
-        var promise = new Promise(
+        const updateSettingsPromise = new Promise(
             function(resolve, reject) {
                 if (DirectCurrencyContent)
                     resolve(DirectCurrencyContent);
                 else
-                    reject(Error("NOK"));
+                    reject(Error("updateSettingsPromise NOK"));
             }
         );
-        promise.then(
+        updateSettingsPromise.then(
             function(aDirectCurrencyContent) {
                 // console.error("Promise fulfilled aDirectCurrencyContent " + aDirectCurrencyContent + " aData " +  aData);
                 aDirectCurrencyContent.onUpdateSettings(aData)
