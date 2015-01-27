@@ -1,0 +1,84 @@
+// SM on install
+Timestamp: 2015-01-27 19:46:23
+Error: ReferenceError: PriceRegexes is not defined
+Source File: chrome://direct-currency-converter/content/dcc-content.js
+Line: 33
+
+// SM on install with Promise
+Timestamp: 2015-01-27 21:00:20
+Error: promise then ReferenceError: PriceRegexes is not defined
+Source File: chrome://direct-currency-converter/content/dcc-content.js
+Line: 49
+
+
+// SM on toggle after install
+Timestamp: 2015-01-27 19:47:15
+Error: TypeError: window.getBrowser is not a function
+Source File: resource://gre/modules/addons/XPIProvider.jsm
+-> jar:file:///Users/per/Library/Application%20Support/SeaMonkey/Profiles/m4s0r8yy.Per%202/extensions/dcc-sm@joint.ax.xpi!/bootstrap.js
+-> resource://gre/modules/commonjs/toolkit/loader.js
+-> resource://gre/modules/commonjs/sdk/tabs/utils.js
+Line: 64
+Timestamp: 2015-01-27 19:47:15
+Error: then Error: NOK
+Source File: chrome://direct-currency-converter/content/dcc-seamonkey-content-adapter.js
+Line: 29
+Timestamp: 2015-01-27 19:47:15
+Error: then Error: NOK
+Source File: chrome://direct-currency-converter/content/dcc-seamonkey-content-adapter.js
+Line: 52
+
+// SM on toggle on after install with Promise
+Timestamp: 2015-01-27 21:26:43
+Error: catch TypeError: aRegex is undefined
+Source File: chrome://direct-currency-converter/content/dcc-seamonkey-content-adapter.js
+Line: 33
+Timestamp: 2015-01-27 21:26:43
+Error: catch TypeError: aRegex is undefined
+Source File: chrome://direct-currency-converter/content/dcc-seamonkey-content-adapter.js
+Line: 56
+
+
+// SM on toggle after install and reload (conversion works)
+Timestamp: 2015-01-27 19:48:54
+Error: TypeError: window.getBrowser is not a function
+Source File: resource://gre/modules/addons/XPIProvider.jsm
+-> jar:file:///Users/per/Library/Application%20Support/SeaMonkey/Profiles/m4s0r8yy.Per%202/extensions/dcc-sm@joint.ax.xpi!/bootstrap.js
+-> resource://gre/modules/commonjs/toolkit/loader.js
+-> resource://gre/modules/commonjs/sdk/tabs/utils.js
+Line: 64
+
+
+// SM now and then
+Timestamp: 2015-01-27 20:01:29
+Error: TypeError: can't access dead object
+Source File: resource://gre/modules/addons/XPIProvider.jsm
+-> jar:file:///Users/per/Library/Application%20Support/SeaMonkey/Profiles/m4s0r8yy.Per%202/extensions/dcc-sm@joint.ax.xpi!/bootstrap.js
+-> resource://gre/modules/commonjs/toolkit/loader.js
+-> resource://dcc-sm-at-joint-dot-ax/direct-currency-converter-2-sm/lib/dcc-main.js
+Line: 1194
+
+
+// FF on install
+ReferenceError: PriceRegexes is not defined dcc-content.js:33
+
+// FF on toggle after install (conversion works)
+TypeError: window.getBrowser is not a function utils.js:64
+
+
+
+
+// SM Suppressed for now
+Timestamp: 2015-01-26 22:32:34
+Error: TypeError: (intermediate value).palette is null
+Source File: resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///Users/per/Library/Application%20Support/SeaMonkey/Profiles/m4s0r8yy.Per%202/extensions/dcc-sm@joint.ax.xpi!/bootstrap.js -> resource://gre/modules/commonjs/toolkit/loader.js -> resource://dcc-sm-at-joint-dot-ax/direct-currency-converter-2-sm/lib/button.js
+Line: 50
+
+Timestamp: 2015-01-26 22:32:34
+Error: TypeError: contentScriptInterface is undefined
+Source File: resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///Users/per/Library/Application%20Support/SeaMonkey/Profiles/m4s0r8yy.Per%202/extensions/dcc-sm@joint.ax.xpi!/bootstrap.js -> resource://gre/modules/commonjs/toolkit/loader.js -> resource://dcc-sm-at-joint-dot-ax/direct-currency-converter-2-sm/lib/dcc-main.js
+Line: 1584
+
+// Clicking tools button
+Timestamp: 2015-01-26 22:49:56
+Error: TypeError: can't access dead object
