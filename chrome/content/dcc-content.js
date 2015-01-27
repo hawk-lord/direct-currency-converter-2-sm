@@ -50,7 +50,7 @@ const DirectCurrencyContent = (function() {
                 aPriceRegexes.makePriceRegexes(regex1, regex2)
             },
             function (err) {
-                console.error("promise then "  + err);
+                // console.error("promise then "  + err);
             }
         ).catch(
             function (err) {

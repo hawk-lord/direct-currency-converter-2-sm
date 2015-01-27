@@ -1,7 +1,7 @@
 Direct Currency Converter for SeaMonkey
 
 Version: 2.0.0.2
-Date: 2015-01-26
+Date: 2015-01-27
 
 After installation, you'll have two new buttons in the browser toolbar.
 
@@ -61,7 +61,7 @@ Fixed JavaScript compilation error.
 Using JQuery UI with same hash code as AMO does.
 
 Version: 2.0.0.2
-Date: 2015-01-26
+Date: 2015-01-27
 Fixed button styles.
 Fixed logged errors.
 
