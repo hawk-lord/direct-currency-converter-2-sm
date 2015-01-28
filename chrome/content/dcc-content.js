@@ -197,7 +197,7 @@ const DirectCurrencyContent = (function() {
             }
             var prices = findPrices(aCurrencyRegex.regex1, aNode.textContent, 3);
             if (prices.length === 0) {
-                prices = findPrices(aCurrencyRegex.regex2, aNode.textContent, 2);
+                prices = findPrices(aCurrencyRegex.regex2, aNode.textContent, 1);
             }
             if (prices.length === 0) {
                 return false;
@@ -526,7 +526,7 @@ const DirectCurrencyContent = (function() {
     };
     const startObserve = function() {
         const MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
-        if (document === null || MutationObserver === null) {
+        if (document === null || MutationObserver == null) {
             return;
         }
         const mutationHandler = function(aMutationRecord) {
