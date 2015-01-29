@@ -1,3 +1,12 @@
+2) Your toolbar button not matching Mozilla reference about toolbars and toolbars buttons:
+https://developer.mozilla.org/en-US/Add-ons/Overlay_Extensions/XUL_School/Adding_Toolbars_and_Toolbar_Buttons
+
+3) Your add-on makes it impossible for a user to permanently remove its toolbar button, which we can't allow.
+Inserting your toolbar button at first run is fine, and recommended, but doing so at every startup or
+making it impossible to move or remove is not.
+
+Remove icons on all windows when disabling.
+
 "Off" icon
 
 Icon size SM, "Use small icons" toggle
