@@ -1,7 +1,7 @@
 Direct Currency Converter for SeaMonkey
 
-Version: 2.0.0.2
-Date: 2015-01-27
+Version: 2.0.2.0
+Date: 2015-01-28
 
 After installation, you'll have two new buttons in the browser toolbar.
 
@@ -65,4 +65,8 @@ Date: 2015-01-27
 Fixed button styles.
 Fixed logged errors.
 
+Version: 2.0.2.0
+Date: 2015-01-28
+Improved support for USD and GHC.
+Fixed error with decimal calculation.
 

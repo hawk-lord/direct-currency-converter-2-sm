@@ -1,15 +1,29 @@
-Icon size SM, "Use small icons" toggle
-Add menu/panel for settings and test.
 "Off" icon
-removeInjections
+
+Icon size SM, "Use small icons" toggle
+
+Add menu/panel for settings and test.
+
+remove injections at uninstall
+
+Clean up code. Better modules.
+
+Close settings page at program start if it was opened.
+
 SM: at program start, no conversion is done. Reload is needed.
     OK if only one window and tab is loaded.
     NOK if 1 window and 2 tabs
+
 If no head element, do doc element?
-palette is null.
+
+palette is null sometimes
+
 Check reset?
+
 Add reload that only reloads currencies.
+
 Can conversion be done in auto after install?
+
 L10N?
 
 
