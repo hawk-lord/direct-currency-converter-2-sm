@@ -5,7 +5,11 @@ https://developer.mozilla.org/en-US/Add-ons/Overlay_Extensions/XUL_School/Adding
 Inserting your toolbar button at first run is fine, and recommended, but doing so at every startup or
 making it impossible to move or remove is not.
 
-Remove icons on all windows when disabling.
+Navigation Toolbar context menu - Customise...:
+Dragging buttons will show the icon only, not the text (not set on button probably)
+Reopening the customise windows will show the button twice.
+Dragging buttons has no effect on other windows (same with FB button, but it is handled correctly at restart).
+and buttons are shown again on restart.
 
 "Off" icon
 
