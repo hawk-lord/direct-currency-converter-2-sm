@@ -68,7 +68,7 @@ TypeError: window.getBrowser is not a function utils.js:64
 
 
 
-// SM Suppressed for now
+// SM, suppressed for now
 Timestamp: 2015-01-26 22:32:34
 Error: TypeError: (intermediate value).palette is null
 Source File: resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///Users/per/Library/Application%20Support/SeaMonkey/Profiles/m4s0r8yy.Per%202/extensions/dcc-sm@joint.ax.xpi!/bootstrap.js -> resource://gre/modules/commonjs/toolkit/loader.js -> resource://dcc-sm-at-joint-dot-ax/direct-currency-converter-2-sm/lib/button.js

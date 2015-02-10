@@ -6,12 +6,14 @@ Inserting your toolbar button at first run is fine, and recommended, but doing s
 making it impossible to move or remove is not.
 
 Navigation Toolbar context menu - Customise...:
-Dragging buttons will show the icon only, not the text (not set on button probably)
-Reopening the customise windows will show the button twice.
+FIXED Dragging buttons will show the icon only, not the text (not set on button probably)
+FIXED Reopening the customise windows will show the button twice.
 Dragging buttons has no effect on other windows (same with FB button, but it is handled correctly at restart).
-and buttons are shown again on restart.
+and buttons are shown again on restart. Should create buttons only on first start.
 
 "Off" icon
+
+Frame support.
 
 Icon size SM, "Use small icons" toggle
 
