@@ -6,12 +6,16 @@ Inserting your toolbar button at first run is fine, and recommended, but doing s
 making it impossible to move or remove is not.
 
 Navigation Toolbar context menu - Customise...:
-Dragging buttons will show the icon only, not the text (not set on button probably)
-Reopening the customise windows will show the button twice.
-Dragging buttons has no effect on other windows (same with FB button, but it is handled correctly at restart).
-and buttons are shown again on restart.
+FIXED Dragging buttons will show the icon only, not the text (not set on button probably)
+FIXED Reopening the customise windows will show the button twice.
+FIXED Dragging buttons has no effect on other windows (same with FB button, but it is handled correctly at restart).
+and buttons are shown again on restart. Should create buttons only on first start.
+
+Show buttons in newly opened window too.
 
 "Off" icon
+
+Frame support.
 
 Icon size SM, "Use small icons" toggle
 
@@ -21,7 +25,7 @@ remove injections at uninstall
 
 Clean up code. Better modules.
 
-Close settings page at program start if it was opened.
+Don't show settings page at program start if it was opened.
 
 SM: at program start, no conversion is done. Reload is needed.
     OK if only one window and tab is loaded.
@@ -39,6 +43,13 @@ Can conversion be done in auto after install?
 
 L10N?
 
+gAu
 
+Add-on that checks available parts of the Add-On SDK.
 
+Check:
+###!!! [Child][DispatchAsyncMessage] Error: (msgtype=0xAA0001,name=PTexture::Msg___delete__) Route error: message sent to unknown actor ID
 
+Unit test.
+
+WebStorm load libraries?
