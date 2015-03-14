@@ -75,6 +75,8 @@ Date: 2015-02-10
 Fixed buttons settings.
 
 Version: 2.0.3.0
-Date: 2015-02-25
-Fixed buttons settings.
-Rewrote currency regexes.
+Date: 2015-03-15
+Added support for US cents (¢, ￠).
+Improved support for non-English characters in price matches.
+Internal change: rewrote price regexes.
+Internal change: Updated jQuery and jQuery UI versions.
